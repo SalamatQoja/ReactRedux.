@@ -1,0 +1,142 @@
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .todo-input {
+    width: 300px;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 70px;
+    border: none;
+    border-bottom-style: dashed;
+    font-size: 19px;
+    font-family:"Roboto", sans-serif; ;
+    outline: none
+  }
+
+  
+  .todo {
+    width: 500px;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 60px;
+    background-color: rgb(102, 102, 241);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  }
+
+  .todo-container {
+    width: 430px;
+    background-color: white;
+    margin-left: 30px;
+    transform: translateY(30px);
+    border-radius: 2px;
+  }
+
+  .todo-btn5{
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: #FFFF;
+    border: 2px solid gray;
+    transform: translateY(-10px);
+    
+  }
+
+  .todo-btn5-g{
+    transform: translate(40px, px);
+    border-bottom-style: dashed;
+    width: 29px;
+  }
+
+  .todo-btn6{
+    color: red;
+    border: none;
+    padding: 2px 5px;
+    transform: translate(-40px, 3px);
+    background-color: white;
+    font-size: 26px;
+
+  }
+
+
+  .btn4 {
+    width: 100px;
+    height: 40px;
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    border: none;
+    background-color: #FFFF;
+
+  }
+
+  .todo-tit {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  .todo-list {
+    width: 325px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 54px;
+  }
+
+  .modal2 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal2-btn2 {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    background-color: rgb(240, 243, 251);
+    font-weight: 530;
+  }
+
+  .modal2-main {
+    width: 430px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: rgb(240, 243, 251);
+  }
+
+  .modal2-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    border-bottom-style: dashed;
+    border: none;
+    padding: 5px;
+    font-size: 19px;
+    text-decoration-line: line-through;
+  }
+ 
+  .modal2-btn1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 328px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  .modal2-tit {
+    font-size: 19px;
+    color: rgb(92, 83, 83);
+  }
+
+  .modal2-ikonka{
+    transform: translate(45px, 29px);
+    
+  }
