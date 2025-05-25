@@ -1,63 +1,3 @@
-// import React, { useState} from "react";
-// import { useSelector, useDispatch } from "react-redux";
-// import type { AppDispatch } from "./TaskReducder";
-// import { addWord, updateList,  markDone, markTodo, clearDone} from "./TaskSlice";
-// import type { RootState } from "./TaskReducder";
-// import "./Task.css"
-
-// const TaskLIst: React.FC = () => {
-//     const todos = useSelector((state: RootState) => state.task);
-//     const dispatch = useDispatch<AppDispatch>();
-//     const [todo, setTodo] = useState(false);
-
-//     const handleClick = () => {
-//         dispatch(addWord());
-//     };
-
-//     const handleChange = (id: number, value: string) => {
-//         dispatch(updateList({ id, word: value }));
-//     };
-
-
-//     return (
-//         <div className="todo">
-//             <div className="todo-container">
-//                 <div className="todo-list">
-//                     <h3 className="todo-tit">Zadacha</h3>
-//                     <button onClick={handleClick} className="btn4">Noviy</button>
-//                 </div>
-//                 {todos.map((todo: { id: number, word: string }) => (
-//                     <div key={todo.id}>
-//                         <button onClick={() => setTodo(true)}></button>
-//                         <input
-//                             type="text"
-//                             value={todo.word}
-//                             onChange={(e) => handleChange(todo.id, e.target.value)}
-//                             className="todo-input"
-//                         />
-//                     </div >
-//                 ))}
-//             </div>
-//             {todo && (
-//                 <div className="modal2-main">
-//                     <div className="modal2">
-//                         <h1>Vipolneno</h1>
-//                         <button className="modal-btn">Ochistit</button>
-//                         <input
-//                             type="text"
-//                             value={todo.word}
-//                             onChange={(e) => handleChange(todo.id, e.target.value)}
-//                             className="modal2-input"
-//                         />
-//                     </div>
-//                 </div>
-//             )}
-//         </div>
-//     );
-// };
-
-// export default TaskLIst;
-
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState, AppDispatch } from "./TaskReducder";
@@ -87,7 +27,6 @@ const TaskList: React.FC = () => {
                             type="text"
                             value={task.word}
                             onChange={e => dispatch(updateList({ id: task.id, word: e.target.value }))}
-                            // onClick={() => dispatch(moveToDone(task.id))}
                             className="todo-input"
                         />
                         <button onClick={() => dispatch(removeList({ id: task.id }))} className="todo-btn6">X</button>

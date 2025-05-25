@@ -49,7 +49,8 @@
   }
 
   .todo-btn5-g{
-    transform: translate(40px, px);
+    margin-left: 40px;
+    transform: translateY(39px);
     border-bottom-style: dashed;
     width: 29px;
   }
@@ -58,7 +59,7 @@
     color: red;
     border: none;
     padding: 2px 5px;
-    transform: translate(-40px, 3px);
+    transform: translate(-40px, -1px);
     background-color: white;
     font-size: 26px;
 
